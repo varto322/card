@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #EAEDED;
+}
+
+/* Create three unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 30%;
+}
+/*Center*/
+.center{
+    float: left;
+    width: 30%;
+    padding-left: 30px;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 30px;
+}
+
+/*card*/
+.card{
+    background-color: bisque;
+    padding: 20px;
+    margin: 20px 10px;
+    text-align: justify;
+    box-shadow: 6px 6px 5px rgb(177, 100, 100);
+    border-radius: 2em 0 0 0;
+}
+img{
+    border-radius: 1em;
+}
+img:hover{
+    transform: rotate(10deg);
+}
+a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: maroon;
+    color: #fff;
+    border-radius: 1em;
+    font-weight: bold;
+}
+a:hover{
+    color: maroon;
+    background-color: #fff;
+    border: solid maroon;
+}
+/* Responsive layout*/
+@media screen and (max-width: 1150px) {
+ .leftcolumn,.center, .rightcolumn {
+   width: 50%;
+   padding: 0;
+  }
+  img{
+      height: 215px;
+  }
+} 
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+ .leftcolumn,.center, .rightcolumn {
+   width: 100%;
+   padding: 0;
+  }
+ img{
+     height: 170px;
+ }
+}
